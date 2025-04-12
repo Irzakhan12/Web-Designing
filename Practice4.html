@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        background-color:black ;
+        width: 50%;
+        height: 70px;
+        position: fixed;
+        top: 40%;
+    left:25%;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        text-decoration: underline;
+    }
+    .main{
+
+        animation-name: slide;
+        animation-duration: 1s;
+background-color: rgb(0, 0, 0);
+    }
+
+    .sec{
+        animation-name:design;
+        width: 50%;
+        animation-duration: 1s;
+        height: 40px;
+        position: fixed;
+        top: 55%;
+        left: 25%;
+    }
+    p{
+        color: rgb(145, 4, 4);
+        background-color: aquamarine;
+        font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+    }
+
+    @keyframes slide{
+        from { transform: translateY(50); }
+        to { transform: translateY(20px); }
+}
+@keyframes design{
+40%{
+color: forestgreen;
+
+}
+
+}
+   
+</style>
+<body>
+    <div class="main">
+        <h1>My Portfolio</h1>
+    </div>
+    <div class="sec">
+        <p>Hello! I'm a passionate web developer learning HTML and CSS.
+        <br>
+        I enjoy coding,designing and problem-solving.
+    </p></div>
+</body>
+</html>

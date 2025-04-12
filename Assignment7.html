@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.nav{
+    background-color: black;
+    padding: 4%;
+}
+    a{
+        text-decoration: none;
+        font-size: 24px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8%;
+    }
+    h1{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    .one{
+        animation: growandshrink 2s forwards;
+    }
+    @keyframes growandshrink {
+        from{
+margin-left: -8%;
+        }
+to{
+    font-size: 40px;
+            color:rgb(11, 27, 99);
+
+        }
+        }
+   
+    .two{
+        animation: slide 3s forwards;
+    }
+    @keyframes slide{
+        from{
+            font-size: 15px;
+            margin-top: 2%;
+        }
+        to{
+            font-size: 25px;
+            margin-top: 5%;
+            color: chartreuse;
+           
+        }
+    }
+        /* @keyframes Slide{
+    from{
+        font-size:25px ;
+
+    }
+    to{
+        font-size: 40px; 
+        color: rgb(17, 38, 158);
+        text-decoration: underline ;
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+        }
+
+    .three{
+        animation: Slide 7s forwards;
+    }  */
+    h5{
+        text-align: center;
+        animation: wipe 5s forwards;
+   
+    }
+    @keyframes wipe{
+from{
+    color: black;
+    font-size: 35px;
+
+}
+to{
+    color: rgb(16, 5, 112);
+    font-size: 55px;
+margin-top: -1%;
+}
+    }
+    h6{
+        text-align: center;
+        animation: slide 5s forwards;
+    }
+a:hover{
+    text-decoration: underline;
+}
+</style>
+<body>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="one">
+        <h1>Welcome to our Company</h1>
+    </div>
+    <div class="two">
+    <h3>Providing the best <span class="three" >Solution</span>  for your Bussiness.</h3>
+</div>
+<hr>
+<div>
+ <h5>Our Mission</h5>
+</div>
+<div>
+    <h6>We strive to Deliver top quality services to our client with efficiency and Dedication.
+    </h6>
+    </div>
+</body>
+</html>
