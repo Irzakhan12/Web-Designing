@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nav{
+        background-color: rgb(88, 188, 255);
+        width: 100%;
+        height: 150px;
+    }
+    .text{
+        width: 100%;
+        height: 290px;
+        background-color: orange;
+    }
+    .boxmain{
+        width: 100%;
+        height: 180px;
+        display:flex;
+        gap: 8px;
+    }
+    .box{
+        width: 35%;
+        height: 100%;
+background-color: red;
+    }
+    .main{
+display:flex ;
+flex-direction: column;
+gap: 5px;
+    }
+    @media (max-width:425px) {
+        .nav{
+            width: 100%;
+        }
+       .boxmain{
+        display: block;
+        width: 100%;
+       }
+       .box{
+        width: 100%;
+       
+       }
+       .text{
+        width: 100%;
+        height: 300px;
+       }
+    }
+    @media(max-width:800px) and ( min-width:425px)
+    {
+.nav{
+    width: 100%;
+}
+.text{
+    width: 100%;
+   
+    height: 575px;
+grid-column: 2/3;
+grid-row: 1/3;
+he
+}
+.box{
+    width: 100%;
+   height: 80%;
+    
+}
+.main{
+display: flex;
+flex-direction: column;
+}
+.boxmain{
+    width: 100%;
+    display:inline;
+  justify-content: left;
+  grid-area: nav;
+}
+.main2{
+    width: 100%;
+    height: 150px;
+display: grid;
+grid-template-columns: 0.5fr 2fr;
+grid: template-rows;1fr;
+grid-template-areas: "nav";
+
+   
+   
+}
+    }
+    @media(min-width:800px){
+        .nav{
+        background-color: rgb(88, 188, 255);
+        width: 100%;
+        height: 150px;
+    }
+    .text{
+        width: 100%;
+        height: 290px;
+        background-color: orange;
+    }
+    .boxmain{
+        width: 100%;
+        height: 180px;
+        display:flex;
+        gap: 8px;
+    }
+    .box{
+        width: 35%;
+        height: 100%;
+background-color: red;
+    }
+    .main{
+display:flex ;
+flex-direction: column;
+gap: 5px;
+    }
+    }
+</style>
+<body>
+    <div class="main">
+    <div class="nav"></div>
+    <div class="main2">
+    <div class="text"></div>
+    <div class="boxmain">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
